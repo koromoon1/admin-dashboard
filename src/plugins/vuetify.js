@@ -23,12 +23,13 @@ export default new Vuetify({
       dark: {
         // use pre-defined material colors
         background: colors.green.lighten5,
+        divider: colors.grey,
       },
       light: {
         background: colors.shades.white,
-        primary: colors.red.darken1, // #E53935
-        secondary: colors.red.lighten4, // #FFCDD2
-        accent: colors.indigo.base, // #3F51B5
+        primary: colors.blue.lighten2,
+        secondary: colors.red.lighten4,
+        accent: colors.indigo.base,
       },
     },
   },

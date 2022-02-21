@@ -18,6 +18,7 @@
               <v-col cols="12" sm="12">
                 <v-app-bar color="rgba(0,0,0,0)" flat class="mx-8 mt-5">
                   <!-- Search Bar -->
+
                   <v-text-field
                     prepend-icon="mdi-magnify"
                     placeholder="Search your symptoms"
@@ -479,5 +480,11 @@ export default {
       return this.$vuetify.theme.dark ? "dark" : "light";
     },
   },
+
+  // methods: {
+  //   toggleDrawer() {
+  //     this.$emit("toggleDrawer");
+  //   },
+  // },
 };
 </script>
