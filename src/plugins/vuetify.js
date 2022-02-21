@@ -21,6 +21,7 @@ export default new Vuetify({
     // 设定主题颜色
     themes: {
       dark: {
+        // use pre-defined material colors
         background: colors.green.lighten5,
       },
       light: {
