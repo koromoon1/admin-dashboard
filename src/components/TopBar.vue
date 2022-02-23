@@ -10,7 +10,9 @@
     <v-btn icon @click.stop="toggleDrawer">
       <v-icon size="25">mdi-menu</v-icon>
     </v-btn>
-    <v-toolbar-title class="hidden-sm-and-down">Title</v-toolbar-title>
+    <v-toolbar-title class="hidden-sm-and-down font-weight-bold"
+      >Dashboard</v-toolbar-title
+    >
     <v-spacer></v-spacer>
     <!-- Search Bar -->
     <v-text-field
