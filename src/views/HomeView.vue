@@ -1,5 +1,6 @@
 <template>
-  <v-app
+  <v-container
+    app
     class="pa-0 mx-0"
     :style="{ background: $vuetify.theme.themes.light.background }"
   >
@@ -14,30 +15,6 @@
         >
           <v-container>
             <v-row>
-              <!-- Top Row -->
-              <v-col cols="12" sm="12">
-                <v-app-bar color="rgba(0,0,0,0)" flat class="mx-8 mt-5">
-                  <!-- Search Bar -->
-
-                  <v-text-field
-                    prepend-icon="mdi-magnify"
-                    placeholder="Search your symptoms"
-                    flat
-                    success
-                  >
-                  </v-text-field>
-
-                  <!-- Spacer -->
-                  <v-spacer></v-spacer>
-
-                  <!-- Time & Date Chip -->
-                  <v-chip class="ma-2" color="white" text-color="black">
-                    <v-icon left color="teal">mdi-clock-time-nine</v-icon>
-                    xx:xx AM Today Feb,20
-                  </v-chip>
-                </v-app-bar>
-              </v-col>
-
               <!-- Promotion Information -->
               <v-col cols="12" sm="12">
                 <v-card class="mx-12 mt-0 rounded-xl">
@@ -92,7 +69,7 @@
                       <v-icon right>mdi-chevron-down</v-icon>
                     </v-btn>
                     <v-btn color="teal" rounded dark depressed>Year</v-btn>
-                    <v-btn text>Month</v-btn>
+                    <!-- <v-btn text>Month</v-btn> -->
                   </v-app-bar>
                   <!-- Sparkline -->
                   <template>
@@ -456,12 +433,13 @@
         </v-app>
       </v-col>
     </v-row>
-  </v-app>
+  </v-container>
 </template>
 
 <script>
 export default {
   name: "HomeView",
+  components: {},
 
   data: () => ({
     // sparkline settings
@@ -480,11 +458,5 @@ export default {
       return this.$vuetify.theme.dark ? "dark" : "light";
     },
   },
-
-  // methods: {
-  //   toggleDrawer() {
-  //     this.$emit("toggleDrawer");
-  //   },
-  // },
 };
 </script>

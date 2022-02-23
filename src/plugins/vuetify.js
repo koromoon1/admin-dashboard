@@ -26,10 +26,7 @@ export default new Vuetify({
         divider: colors.grey,
       },
       light: {
-        background: colors.shades.white,
-        primary: colors.blue.lighten2,
-        secondary: colors.red.lighten4,
-        accent: colors.indigo.base,
+        background: "#eee",
       },
     },
   },
